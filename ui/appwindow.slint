@@ -1,0 +1,31 @@
+
+import { Button, VerticalBox } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 1520px;
+    height: 980px;
+    background: @linear-gradient(90deg, #d1d1d1 0%, #a5a5a5 20%, #fee3e3 100%);
+    title:"棉花糖";
+    icon: @image-url("./icons/bus.png");
+
+
+    input := TextInput {
+        text: "hello world";
+    }
+    Button {
+        
+        text: "点击我";
+        y: 80px;
+        x: 100px;
+        width: 200px;
+        height: 40px;
+        clicked => {
+
+        }
+    }
+
+
+}
+
+
+
